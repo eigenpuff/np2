@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B69A8C7E-A22D-45DA-9997-2D1403C7AEE8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>build\Debug\</OutDir>
+    <IntDir>build\Debug\obj</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>build\Release\</OutDir>
+    <IntDir>build\Release\obj</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>crypto;src;scintilla\include;scintilla\src;scintilla\lexlib;scintilla\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STATIC_BUILD;SCI_LEXER;_DEBUG;WIN32;_WINDOWS;UNICODE;_UNICODE;_M_IX86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;_M_IX86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Notepad2.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Notepad2.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>crypto;src;scintilla\include;scintilla\src;scintilla\lexlib;scintilla\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STATIC_BUILD;SCI_LEXER;NDEBUG;WIN32;_WINDOWS;UNICODE;_UNICODE;_M_IX86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_M_IX86;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>comctl32.lib;shlwapi.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Notepad2.exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Dialogs.c" />
+    <ClCompile Include="src\Dlapi.c" />
+    <ClCompile Include="src\Edit.c" />
+    <ClCompile Include="src\Helpers.c" />
+    <ClCompile Include="src\Notepad2.c" />
+    <ClCompile Include="src\Print.cpp" />
+    <ClCompile Include="src\Styles.c" />
+    <ClCompile Include="scintilla\lexers\LexAsm.cxx" />
+    <ClCompile Include="scintilla\lexers\LexConf.cxx" />
+    <ClCompile Include="scintilla\lexers\LexCPP.cxx" />
+    <ClCompile Include="scintilla\lexers\LexCSS.cxx" />
+    <ClCompile Include="scintilla\lexers\LexHTML.cxx" />
+    <ClCompile Include="scintilla\lexers\LexOthers.cxx" />
+    <ClCompile Include="scintilla\lexers\LexPascal.cxx" />
+    <ClCompile Include="scintilla\lexers\LexPerl.cxx" />
+    <ClCompile Include="scintilla\lexers\LexPowerShell.cxx" />
+    <ClCompile Include="scintilla\lexers\LexPython.cxx" />
+    <ClCompile Include="scintilla\lexers\LexSQL.cxx" />
+    <ClCompile Include="scintilla\lexers\LexVB.cxx" />
+    <ClCompile Include="scintilla\lexlib\Accessor.cxx" />
+    <ClCompile Include="scintilla\lexlib\CharacterSet.cxx" />
+    <ClCompile Include="scintilla\lexlib\LexerBase.cxx" />
+    <ClCompile Include="scintilla\lexlib\LexerModule.cxx" />
+    <ClCompile Include="scintilla\lexlib\LexerSimple.cxx" />
+    <ClCompile Include="scintilla\lexlib\PropSetSimple.cxx" />
+    <ClCompile Include="scintilla\lexlib\StyleContext.cxx" />
+    <ClCompile Include="scintilla\lexlib\WordList.cxx" />
+    <ClCompile Include="scintilla\src\AutoComplete.cxx" />
+    <ClCompile Include="scintilla\src\CallTip.cxx" />
+    <ClCompile Include="scintilla\src\Catalogue.cxx" />
+    <ClCompile Include="scintilla\src\CellBuffer.cxx" />
+    <ClCompile Include="scintilla\src\CharClassify.cxx" />
+    <ClCompile Include="scintilla\src\ContractionState.cxx" />
+    <ClCompile Include="scintilla\src\Decoration.cxx" />
+    <ClCompile Include="scintilla\src\Document.cxx" />
+    <ClCompile Include="scintilla\src\Editor.cxx" />
+    <ClCompile Include="scintilla\src\ExternalLexer.cxx" />
+    <ClCompile Include="scintilla\src\Indicator.cxx" />
+    <ClCompile Include="scintilla\src\KeyMap.cxx" />
+    <ClCompile Include="scintilla\src\LineMarker.cxx" />
+    <ClCompile Include="scintilla\src\PerLine.cxx" />
+    <ClCompile Include="scintilla\src\PositionCache.cxx" />
+    <ClCompile Include="scintilla\src\RESearch.cxx" />
+    <ClCompile Include="scintilla\src\RunStyles.cxx" />
+    <ClCompile Include="scintilla\src\ScintillaBase.cxx" />
+    <ClCompile Include="scintilla\src\Selection.cxx" />
+    <ClCompile Include="scintilla\src\Style.cxx" />
+    <ClCompile Include="scintilla\src\UniConversion.cxx" />
+    <ClCompile Include="scintilla\src\ViewStyle.cxx" />
+    <ClCompile Include="scintilla\src\XPM.cxx" />
+    <ClCompile Include="scintilla\win32\PlatWin.cxx" />
+    <ClCompile Include="scintilla\win32\ScintillaWin.cxx" />
+    <ClCompile Include="crypto\crypto.c" />
+    <ClCompile Include="crypto\rijndael-alg-fst.c" />
+    <ClCompile Include="crypto\rijndael-api-fst.c" />
+    <ClCompile Include="crypto\sha-256.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Dialogs.h" />
+    <ClInclude Include="src\Dlapi.h" />
+    <ClInclude Include="src\Edit.h" />
+    <ClInclude Include="src\Helpers.h" />
+    <ClInclude Include="src\Notepad2.h" />
+    <ClInclude Include="src\resource.h" />
+    <ClInclude Include="src\Styles.h" />
+    <ClInclude Include="src\version.h" />
+    <ClInclude Include="scintilla\include\ILexer.h" />
+    <ClInclude Include="scintilla\include\Platform.h" />
+    <ClInclude Include="scintilla\include\SciLexer.h" />
+    <ClInclude Include="scintilla\include\Scintilla.h" />
+    <ClInclude Include="scintilla\include\ScintillaWidget.h" />
+    <ClInclude Include="scintilla\lexlib\Accessor.h" />
+    <ClInclude Include="scintilla\lexlib\CharacterSet.h" />
+    <ClInclude Include="scintilla\lexlib\LexAccessor.h" />
+    <ClInclude Include="scintilla\lexlib\LexerBase.h" />
+    <ClInclude Include="scintilla\lexlib\LexerModule.h" />
+    <ClInclude Include="scintilla\lexlib\LexerSimple.h" />
+    <ClInclude Include="scintilla\lexlib\OptionSet.h" />
+    <ClInclude Include="scintilla\lexlib\PropSetSimple.h" />
+    <ClInclude Include="scintilla\lexlib\StyleContext.h" />
+    <ClInclude Include="scintilla\lexlib\WordList.h" />
+    <ClInclude Include="scintilla\src\AutoComplete.h" />
+    <ClInclude Include="scintilla\src\CallTip.h" />
+    <ClInclude Include="scintilla\src\Catalogue.h" />
+    <ClInclude Include="scintilla\src\CellBuffer.h" />
+    <ClInclude Include="scintilla\src\CharClassify.h" />
+    <ClInclude Include="scintilla\src\ContractionState.h" />
+    <ClInclude Include="scintilla\src\Decoration.h" />
+    <ClInclude Include="scintilla\src\Document.h" />
+    <ClInclude Include="scintilla\src\Editor.h" />
+    <ClInclude Include="scintilla\src\ExternalLexer.h" />
+    <ClInclude Include="scintilla\src\FontQuality.h" />
+    <ClInclude Include="scintilla\src\Indicator.h" />
+    <ClInclude Include="scintilla\src\KeyMap.h" />
+    <ClInclude Include="scintilla\src\LineMarker.h" />
+    <ClInclude Include="scintilla\src\Partitioning.h" />
+    <ClInclude Include="scintilla\src\PerLine.h" />
+    <ClInclude Include="scintilla\src\PositionCache.h" />
+    <ClInclude Include="scintilla\src\RESearch.h" />
+    <ClInclude Include="scintilla\src\RunStyles.h" />
+    <ClInclude Include="scintilla\src\ScintillaBase.h" />
+    <ClInclude Include="scintilla\src\Selection.h" />
+    <ClInclude Include="scintilla\src\SplitVector.h" />
+    <ClInclude Include="scintilla\src\Style.h" />
+    <ClInclude Include="scintilla\src\SVector.h" />
+    <ClInclude Include="scintilla\src\UniConversion.h" />
+    <ClInclude Include="scintilla\src\ViewStyle.h" />
+    <ClInclude Include="scintilla\src\XPM.h" />
+    <ClInclude Include="crypto\crypto.h" />
+    <ClInclude Include="crypto\rijndael-alg-fst.h" />
+    <ClInclude Include="crypto\rijndael-api-fst.h" />
+    <ClInclude Include="crypto\sha-256.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Copy.cur" />
+    <None Include="res\Hover.cur" />
+    <None Include="src\Notepad2.ver" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Encoding.bmp" />
+    <Image Include="res\Next.bmp" />
+    <Image Include="res\Notepad2.ico" />
+    <Image Include="res\Open.bmp" />
+    <Image Include="res\Pick.bmp" />
+    <Image Include="res\Prev.bmp" />
+    <Image Include="res\Run.ico" />
+    <Image Include="res\Styles.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\Notepad2.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\Notepad2.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
