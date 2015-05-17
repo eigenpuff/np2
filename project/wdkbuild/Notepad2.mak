@@ -5,13 +5,13 @@ CFG=i386
 !ENDIF
 
 !IF "$(CFG)" == "i386"
-OUTPUT=..\Release\i386
+OUTPUT=..\..\build\Release\i386
 CFLAGS=/c /EHsc /GF /GS- /MD /O1 /W3
 RCCFG=/d "_M_IX86"
 LDCFG=/VERSION:5.0 /SUBSYSTEM:WINDOWS,5.0 /OSVERSION:5.0 /MACHINE:IX86 /NXCOMPAT /DYNAMICBASE
 LIBS2=msvcrt_win2000.obj
 !ELSE
-OUTPUT=..\Release\amd64
+OUTPUT=..\..\build\Release\amd64
 CFLAGS=/c /EHsc /GF /GS- /MD /O1 /W3
 RCCFG=/d "_M_AMD64"
 LDCFG=/VERSION:5.2 /SUBSYSTEM:WINDOWS,5.2 /OSVERSION:5.2 /MACHINE:AMD64 /NXCOMPAT /DYNAMICBASE
@@ -22,9 +22,9 @@ CC=cl /nologo
 RC=rc
 LD=link /nologo
 
-SRC=..\src
-RES=..\res
-SCI=..\scintilla
+SRC=..\..\source\src
+RES=..\..\source\res
+SCI=..\..\source\scintilla
 EXE=$(OUTPUT)\Notepad2.exe
 
 CDEF=/D "STATIC_BUILD" /D "SCI_LEXER" /D "WIN32" /D "_WINDOWS" /D "NDEBUG" /D "_UNICODE" /D "UNICODE"
