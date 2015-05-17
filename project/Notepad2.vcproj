@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\source\crypto;..\source\src;..\source\scintilla\include;..\source\scintilla\src;..\source\scintilla\lexlib;..\source\scintilla\win32"
+				AdditionalIncludeDirectories="..\source\crypto;..\source\win;..\source\scintilla\include;..\source\scintilla\src;..\source\scintilla\lexlib;..\source\scintilla\win32"
 				PreprocessorDefinitions="STATIC_BUILD;SCI_LEXER;_DEBUG;WIN32;_WINDOWS;UNICODE;_UNICODE;_M_IX86"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -123,7 +123,7 @@
 				Optimization="2"
 				InlineFunctionExpansion="1"
 				OmitFramePointers="true"
-				AdditionalIncludeDirectories="..\source\crypto;..\source\src;..\source\scintilla\include;..\source\scintilla\src;..\source\scintilla\lexlib;..\source\scintilla\win32"
+				AdditionalIncludeDirectories="..\source\crypto;..\source\win;..\source\scintilla\include;..\source\scintilla\src;..\source\scintilla\lexlib;..\source\scintilla\win32"
 				PreprocessorDefinitions="STATIC_BUILD;SCI_LEXER;NDEBUG;WIN32;_WINDOWS;UNICODE;_UNICODE;_M_IX86"
 				StringPooling="true"
 				RuntimeLibrary="2"
@@ -187,31 +187,31 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm"
 			>
 			<File
-				RelativePath="..\source\src\Dialogs.c"
+				RelativePath="..\source\win\Dialogs.c"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Dlapi.c"
+				RelativePath="..\source\win\Dlapi.c"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Edit.c"
+				RelativePath="..\source\win\Edit.c"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Helpers.c"
+				RelativePath="..\source\win\Helpers.c"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Notepad2.c"
+				RelativePath="..\source\win\Notepad2.c"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Print.cpp"
+				RelativePath="..\source\win\Print.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Styles.c"
+				RelativePath="..\source\win\Styles.c"
 				>
 			</File>
 		</Filter>
@@ -220,35 +220,35 @@
 			Filter="h;hpp;hxx;hm;inl;inc"
 			>
 			<File
-				RelativePath="..\source\src\Dialogs.h"
+				RelativePath="..\source\win\Dialogs.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Dlapi.h"
+				RelativePath="..\source\win\Dlapi.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Edit.h"
+				RelativePath="..\source\win\Edit.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Helpers.h"
+				RelativePath="..\source\win\Helpers.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Notepad2.h"
+				RelativePath="..\source\win\Notepad2.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\resource.h"
+				RelativePath="..\source\win\resource.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Styles.h"
+				RelativePath="..\source\win\Styles.h"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\version.h"
+				RelativePath="..\source\win\version.h"
 				>
 			</File>
 		</Filter>
@@ -281,11 +281,11 @@
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Notepad2.rc"
+				RelativePath="..\source\win\Notepad2.rc"
 				>
 			</File>
 			<File
-				RelativePath="..\source\src\Notepad2.ver"
+				RelativePath="..\source\win\Notepad2.ver"
 				>
 			</File>
 			<File

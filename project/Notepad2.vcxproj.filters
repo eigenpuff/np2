@@ -32,25 +32,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\src\Dialogs.c">
+    <ClCompile Include="..\source\win\Dialogs.c">
       <Filter>Notepad2</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\src\Dlapi.c">
+    <ClCompile Include="..\source\win\Dlapi.c">
       <Filter>Notepad2</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\src\Edit.c">
+    <ClCompile Include="..\source\win\Edit.c">
       <Filter>Notepad2</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\src\Helpers.c">
+    <ClCompile Include="..\source\win\Helpers.c">
       <Filter>Notepad2</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\src\Notepad2.c">
+    <ClCompile Include="..\source\win\Notepad2.c">
       <Filter>Notepad2</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\src\Print.cpp">
+    <ClCompile Include="..\source\win\Print.cpp">
       <Filter>Notepad2</Filter>
     </ClCompile>
-    <ClCompile Include="..\source\src\Styles.c">
+    <ClCompile Include="..\source\win\Styles.c">
       <Filter>Notepad2</Filter>
     </ClCompile>
     <ClCompile Include="..\source\scintilla\lexers\LexAsm.cxx">
@@ -340,28 +340,28 @@
     <ClInclude Include="..\source\crypto\sha-256.h">
       <Filter>crypto</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\Dialogs.h">
+    <ClInclude Include="..\source\win\Dialogs.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\Dlapi.h">
+    <ClInclude Include="..\source\win\Dlapi.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\Edit.h">
+    <ClInclude Include="..\source\win\Edit.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\Helpers.h">
+    <ClInclude Include="..\source\win\Helpers.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\Notepad2.h">
+    <ClInclude Include="..\source\win\Notepad2.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\resource.h">
+    <ClInclude Include="..\source\win\resource.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\Styles.h">
+    <ClInclude Include="..\source\win\Styles.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
-    <ClInclude Include="..\source\src\version.h">
+    <ClInclude Include="..\source\win\version.h">
       <Filter>Notepad2</Filter>
     </ClInclude>
   </ItemGroup>
@@ -372,7 +372,7 @@
     <None Include="..\source\res\Hover.cur">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="..\source\src\Notepad2.ver">
+    <None Include="..\source\win\Notepad2.ver">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
@@ -411,7 +411,7 @@
     </Manifest>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="..\source\src\Notepad2.rc">
+    <ResourceCompile Include="..\source\win\Notepad2.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
