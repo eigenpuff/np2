@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{73823296-9bc9-460d-97c9-6c98c07d0854}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;manifest;xpm;ver</Extensions>
+    </Filter>
+    <Filter Include="Scintilla">
+      <UniqueIdentifier>{8a386002-39ab-4121-985b-52116e8c4d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scintilla\include">
+      <UniqueIdentifier>{8fa689f1-6c15-4f03-b60c-732d1e62d650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scintilla\lexers">
+      <UniqueIdentifier>{fb4cdaf4-7bb2-4c08-90e5-1b5da5d07052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scintilla\lexlib">
+      <UniqueIdentifier>{95da0891-7ad7-4d63-b1ac-700d7802d089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scintilla\src">
+      <UniqueIdentifier>{ccbb67ab-3f32-4d1e-bb57-4fe8e7351472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scintilla\win32">
+      <UniqueIdentifier>{598ed1a9-96c2-4258-b57c-d9850d7423c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="crypto">
+      <UniqueIdentifier>{e6370420-3768-4ca1-9b5c-b21c4bbf2352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Notepad2">
+      <UniqueIdentifier>{5bda9068-b4ae-4111-89bb-a02d2213cd75}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\src\Dialogs.c">
+      <Filter>Notepad2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\src\Dlapi.c">
+      <Filter>Notepad2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\src\Edit.c">
+      <Filter>Notepad2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\src\Helpers.c">
+      <Filter>Notepad2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\src\Notepad2.c">
+      <Filter>Notepad2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\src\Print.cpp">
+      <Filter>Notepad2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\src\Styles.c">
+      <Filter>Notepad2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexAsm.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexConf.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexCPP.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexCSS.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexHTML.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexOthers.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexPascal.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexPerl.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexPowerShell.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexPython.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexSQL.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexers\LexVB.cxx">
+      <Filter>Scintilla\lexers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\Accessor.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\CharacterSet.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\LexerBase.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\LexerModule.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\LexerSimple.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\PropSetSimple.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\StyleContext.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\lexlib\WordList.cxx">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\AutoComplete.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\CallTip.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\Catalogue.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\CellBuffer.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\CharClassify.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\ContractionState.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\Decoration.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\Document.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\Editor.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\ExternalLexer.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\Indicator.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\KeyMap.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\LineMarker.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\PerLine.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\PositionCache.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\RESearch.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\RunStyles.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\ScintillaBase.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\Selection.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\Style.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\UniConversion.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\ViewStyle.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\src\XPM.cxx">
+      <Filter>Scintilla\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\win32\PlatWin.cxx">
+      <Filter>Scintilla\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\scintilla\win32\ScintillaWin.cxx">
+      <Filter>Scintilla\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\crypto\crypto.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\crypto\rijndael-alg-fst.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\crypto\rijndael-api-fst.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\crypto\sha-256.c">
+      <Filter>crypto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\scintilla\include\ILexer.h">
+      <Filter>Scintilla\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\include\Platform.h">
+      <Filter>Scintilla\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\include\SciLexer.h">
+      <Filter>Scintilla\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\include\Scintilla.h">
+      <Filter>Scintilla\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\include\ScintillaWidget.h">
+      <Filter>Scintilla\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\Accessor.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\CharacterSet.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\LexAccessor.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\LexerBase.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\LexerModule.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\LexerSimple.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\OptionSet.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\PropSetSimple.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\StyleContext.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\lexlib\WordList.h">
+      <Filter>Scintilla\lexlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\AutoComplete.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\CallTip.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Catalogue.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\CellBuffer.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\CharClassify.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\ContractionState.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Decoration.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Document.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Editor.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\ExternalLexer.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\FontQuality.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Indicator.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\KeyMap.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\LineMarker.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Partitioning.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\PerLine.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\PositionCache.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\RESearch.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\RunStyles.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\ScintillaBase.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Selection.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\SplitVector.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\Style.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\SVector.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\UniConversion.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\ViewStyle.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\scintilla\src\XPM.h">
+      <Filter>Scintilla\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\crypto\crypto.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\crypto\rijndael-alg-fst.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\crypto\rijndael-api-fst.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\crypto\sha-256.h">
+      <Filter>crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\Dialogs.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\Dlapi.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\Edit.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\Helpers.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\Notepad2.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\resource.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\Styles.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\src\version.h">
+      <Filter>Notepad2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\res\Copy.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\source\res\Hover.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\source\src\Notepad2.ver">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\source\res\Encoding.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Next.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Notepad2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Open.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Pick.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Prev.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Run.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Styles.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="..\source\res\Notepad2.exe.manifest">
+      <Filter>Resource Files</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\source\src\Notepad2.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
